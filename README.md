@@ -18,3 +18,13 @@ python main.py
 ```
 
 The output will be exported at `output` folder.
+
+## Export to Bangumi
+
+Set the bangumi user id and token at `.env`.
+
+After the json files are saved at `output`, then run the script,
+
+```
+python bangumi.py
+```
