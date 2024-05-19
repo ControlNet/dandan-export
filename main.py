@@ -38,7 +38,7 @@ async def main():
             return
 
         with open(output_path / "favorite.json", "w", encoding="UTF-8") as f:
-            json.dump(favorite, f, indent=4, ensure_ascii=False)
+            json.dump(favorite["favorites"], f, indent=4, ensure_ascii=False)
 
         output_detail_path = output_path / "details"
         output_detail_path.mkdir(exist_ok=True)
